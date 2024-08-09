@@ -5,11 +5,16 @@
 #' @examples
 #' new_agent()
 #' new_agent(list(energy = 10, health = 20))
-
 new_agent <- function(attributes = list()) {
   structure(attributes, class = "agent")
 }
 
+#' Check if object is formatted as an agent object
+#'
+#' @param x Object to be checked
+#' @returns Object to be checked, or error.
+#' @examples
+#' validate_agent(new_agent())
 validate_agent <- function(x) {
   values <- unclass(x)
 
@@ -33,7 +38,6 @@ validate_agent <- function(x) {
 #' @examples
 #' agent()
 #' agent(list(energy = 10, health = 20))
-
 agent <- function(attributes = list()) {
   new_agent(attributes) |> validate_agent()
 }

@@ -1,8 +1,8 @@
 Package: agent
 Type: Package
-Title: What the Package Does (Title Case)
+Title: An R interface for agent based simulation
 Version: 0.1.0
-Author: Who wrote it
+Author: Tjark van de Merwe
 Maintainer: The package maintainer <yourself@somewhere.net>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
